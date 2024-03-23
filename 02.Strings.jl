@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.19.36
+# v0.19.40
 
 using Markdown
 using InteractiveUtils
@@ -25,11 +25,11 @@ Topics:
 """
 
 # ╔═╡ dafb9dfe-ff69-44d7-a997-4cc452c1c068
-md"""
+md"
 ## How to get a string
 
-Enclose your characters in " " or """ """!
-"""
+Enclose your characters in \" \" or \"\"\" \"\"\"!
+"
 
 # ╔═╡ a4ed9719-f290-4584-ab09-99c9be3aae7d
 s1 = "I am a string"
@@ -133,14 +133,14 @@ c = "$a + $b"
 # ╔═╡ e2b6c78d-e901-4e48-96dc-b0728150d31c
 d = "$(a+b)"
 
+# ╔═╡ 78d2a605-6390-47f3-b2df-f07ff744ecd6
+hi = "hi"^1000 # it is like doing 'hi*hi' 1000 times...
+
 # ╔═╡ 939ea130-a992-4ea5-b086-a9008d480334
 # ╠═╡ disabled = true
 #=╠═╡
 hi = repeat("hi", 1000)
   ╠═╡ =#
-
-# ╔═╡ 78d2a605-6390-47f3-b2df-f07ff744ecd6
-hi = "hi"^1000 # it is like doing 'hi*hi' 1000 times...
 
 # ╔═╡ Cell order:
 # ╟─169730a0-a730-11ee-156d-331df9e814fd

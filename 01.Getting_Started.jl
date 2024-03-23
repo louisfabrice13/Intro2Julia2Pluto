@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.19.36
+# v0.19.40
 
 using Markdown
 using InteractiveUtils
@@ -15,6 +15,25 @@ Topics:
 4. Syntax for basic math
 "
 
+# ╔═╡ c729cb71-1a3a-4eee-a887-a8a8e5e4e355
+md"
+## Caveat: Pluto.jl
+Before we start, let's recover a bit of info about Pluto.jl.
+
+This is a Pluto notebook with code cells that wrap Julia code into a `begin...end` cell and markdown cells that wrap text in a `md\"...\"` cell.
+Run them with shift+enter or clicking on the small play button at the bottom right corner.
+
+Pluto is a package written in Julia itself, that allows to use \"notebooks\" similar to those in Jupyter.
+Notebooks are often abused as a tool for R&D and production code: they are meant for short explorations and presentations.
+They have some issues that make R&D and production brittle: they have a working environment that may fill with old variables and values, and one should always do the sanity check of running the notebook from start to finish.
+
+Pluto tracks all variables and re-runs cells that depend on modified cells.
+If you change the value of foo, all cells with foo are updated!
+Moreover, you do not need to specify which packages to install before running etc.
+Pluto is plug-and-play (plug may take some time, but again if you need lots of things probably you should not do them in a notebook).
+Then Pluto is interactive and \"shiny\", so...enjoy
+"
+
 # ╔═╡ 6fe02936-421f-4b25-b944-1d301cfd8ef6
 md"
 ## How to print
@@ -24,8 +43,7 @@ The first lesson is about how to print. We'll use the command `println()`
 
 # ╔═╡ fb32f3c1-de31-48a8-8e4e-6eeec7dd3f23
 begin
-	println("I cannot work seamlessly on Julia in JupyterLab")
-	println("I am learning Julia on Pluto.jl instead! It was made for this :)")
+	println("This is how you print in Julia: use the println() and print its argument")
 end
 
 # ╔═╡ 76478dd5-269d-41b5-8772-aba241134270
@@ -35,7 +53,7 @@ md"
 We only need name, equal sign, and value"
 
 # ╔═╡ 24cf914d-65d9-4f58-89ed-9f1a1e10bc9a
-myvalue = 42
+myvalue = 13
 
 # ╔═╡ 0008da1e-9905-43c4-86ee-5123184e5c67
 typeof(myvalue)
@@ -132,6 +150,7 @@ parse(Int64, "1")
 
 # ╔═╡ Cell order:
 # ╟─816f75c0-a728-11ee-13c5-b1f814f7a613
+# ╟─c729cb71-1a3a-4eee-a887-a8a8e5e4e355
 # ╟─6fe02936-421f-4b25-b944-1d301cfd8ef6
 # ╠═fb32f3c1-de31-48a8-8e4e-6eeec7dd3f23
 # ╟─76478dd5-269d-41b5-8772-aba241134270
